@@ -16,6 +16,12 @@ public class FileUtilityParser {
         return lines.get(0);
     }
 
+    public List<String> readFileSplitByLines(String fileName) throws IOException {
+        File inputFile = getFile(fileName);
+        List<String> lines = Files.readAllLines(inputFile.toPath());
+        return lines;
+    }
+
     private File getFile(String fileName) throws IOException
     {
         ClassLoader classLoader = getClass().getClassLoader();
