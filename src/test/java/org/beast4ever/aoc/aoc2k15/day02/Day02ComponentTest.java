@@ -39,4 +39,31 @@ public class Day02ComponentTest {
         Assertions.assertEquals(expectedResponse, response);
 
     }
+
+    @Test
+    public void whenInputTestData01_thenResolveSecondStar() throws IOException {
+        String expectedResponse = "34";
+
+        String response = day02Component.resolveSecondStar("test-input-day02-01.txt");
+        Assertions.assertEquals(expectedResponse, response);
+
+    }
+
+    @Test
+    public void whenInputTestData02_thenResolveSecondStar() throws IOException {
+        String expectedResponse = "14";
+
+        String response = day02Component.resolveSecondStar("test-input-day02-02.txt");
+        Assertions.assertEquals(expectedResponse, response);
+
+    }
+
+    @Test
+    public void whenInputRealData_thenResolveSecondStar() throws IOException {
+        String expectedResponse = "3842356";
+
+        String response = day02Component.resolveSecondStar("input-day02-S1S2.txt");
+        Assertions.assertEquals(expectedResponse, response);
+
+    }
 }
