@@ -1,6 +1,6 @@
-package org.beast4ever.aoc.aoc2k15.day04;
+package org.beast4ever.aoc.aoc2k15;
 
-import org.beast4ever.aoc.aoc2k15.day03.Day03Component;
+import org.beast4ever.aoc.aoc2k15.Day04Component;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

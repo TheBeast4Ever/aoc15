@@ -1,9 +1,8 @@
-package org.beast4ever.aoc.aoc2k15.day04;
+package org.beast4ever.aoc.aoc2k15;
 
 import lombok.extern.slf4j.Slf4j;
 import org.beast4ever.aoc.aoc2k15.DayResolutionComponent;
 import org.beast4ever.aoc.aoc2k15.FileUtilityParser;
-import org.beast4ever.aoc.aoc2k15.day03.Day03Component;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -11,8 +10,6 @@ import java.io.IOException;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.stream.IntStream;
 
 @Component

@@ -1,4 +1,4 @@
-package org.beast4ever.aoc.aoc2k15.day01;
+package org.beast4ever.aoc.aoc2k15;
 
 import org.beast4ever.aoc.aoc2k15.DayResolutionComponent;
 import org.beast4ever.aoc.aoc2k15.FileUtilityParser;
@@ -32,7 +32,7 @@ public class Day01Component extends DayResolutionComponent {
         return result;
     }
 
-    private Long browseBuildingFloors(String inputEntry) {
+    public Long browseBuildingFloors(String inputEntry) {
         Long currentFloor = 0l;
 
         Long ascendingMoves = inputEntry.codePoints().mapToObj(c -> (char) c).filter(c -> c == '(').count();
@@ -43,7 +43,7 @@ public class Day01Component extends DayResolutionComponent {
         return currentFloor;
     }
 
-    private Long findFirstBasementPosition(String inputEntry) {
+    public Long findFirstBasementPosition(String inputEntry) {
         AtomicReference<Long> finalCurrentFloor = new AtomicReference<>(0l);
         AtomicReference<Long> firstBasementPosition = new AtomicReference<>(0l);
         ForEachWithBreaker.forEach( inputEntry.codePoints().mapToObj(c -> (char) c), (currChar, breaker) -> {

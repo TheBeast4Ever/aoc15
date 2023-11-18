@@ -1,4 +1,5 @@
-package org.beast4ever.aoc.aoc2k15.day01;
+package org.beast4ever.aoc.aoc2k15;
+import org.beast4ever.aoc.aoc2k15.Day01Component;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,81 +16,80 @@ public class Day01ComponentTest {
 
     @Test
     public void whenInputTestData01_thenResolveFirstStar() throws IOException {
-        String expectedResponse = "0";
+        Long expectedResponse = 0l;
 
-        String response = day01Component.resolveFirstStar("test-input-day01-01.txt");
+        Long response = day01Component.browseBuildingFloors("(())");
         Assertions.assertEquals(expectedResponse, response);
 
     }
 
     @Test
     public void whenInputTestData02_thenResolveFirstStar() throws IOException {
-        String expectedResponse = "0";
+        Long expectedResponse = 0l;
 
-        String response = day01Component.resolveFirstStar("test-input-day01-02.txt");
+        Long response = day01Component.browseBuildingFloors("()()");
         Assertions.assertEquals(expectedResponse, response);
 
     }
 
     @Test
     public void whenInputTestData03_thenResolveFirstStar() throws IOException {
-        String expectedResponse = "3";
+        Long expectedResponse = 3l;
 
-        String response = day01Component.resolveFirstStar("test-input-day01-03.txt");
+        Long response = day01Component.browseBuildingFloors("(((");
         Assertions.assertEquals(expectedResponse, response);
 
     }
 
     @Test
     public void whenInputTestData04_thenResolveFirstStar() throws IOException {
-        String expectedResponse = "3";
+        Long expectedResponse = 3l;
 
-        String response = day01Component.resolveFirstStar("test-input-day01-04.txt");
+        Long response = day01Component.browseBuildingFloors("(()(()(");
         Assertions.assertEquals(expectedResponse, response);
 
     }
 
     @Test
     public void whenInputTestData05_thenResolveFirstStar() throws IOException {
-        String expectedResponse = "3";
+        Long expectedResponse = 3l;
 
-        String response = day01Component.resolveFirstStar("test-input-day01-05.txt");
+        Long response = day01Component.browseBuildingFloors("))(((((");
         Assertions.assertEquals(expectedResponse, response);
 
     }
 
     @Test
     public void whenInputTestData06_thenResolveFirstStar() throws IOException {
-        String expectedResponse = "-1";
+        Long expectedResponse = -1l;
 
-        String response = day01Component.resolveFirstStar("test-input-day01-06.txt");
+        Long response = day01Component.browseBuildingFloors("())");
         Assertions.assertEquals(expectedResponse, response);
 
     }
 
     @Test
     public void whenInputTestData07_thenResolveFirstStar() throws IOException {
-        String expectedResponse = "-1";
+        Long expectedResponse = -1l;
 
-        String response = day01Component.resolveFirstStar("test-input-day01-07.txt");
+        Long response = day01Component.browseBuildingFloors("))(");
         Assertions.assertEquals(expectedResponse, response);
 
     }
 
     @Test
     public void whenInputTestData08_thenResolveFirstStar() throws IOException {
-        String expectedResponse = "-3";
-
-        String response = day01Component.resolveFirstStar("test-input-day01-08.txt");
+        Long expectedResponse = -3l;
+        Long response = day01Component.browseBuildingFloors(")))");
         Assertions.assertEquals(expectedResponse, response);
 
     }
 
     @Test
     public void whenInputTestData09_thenResolveFirstStar() throws IOException {
-        String expectedResponse = "-3";
+        Long expectedResponse = -3l;
 
-        String response = day01Component.resolveFirstStar("test-input-day01-09.txt");
+        Long response = day01Component.browseBuildingFloors(")())())");
         Assertions.assertEquals(expectedResponse, response);
 
     }
@@ -105,18 +105,18 @@ public class Day01ComponentTest {
 
     @Test
     public void whenInputTestData01_thenResolveSecondStar() throws IOException {
-        String expectedResponse = "1";
+        Long expectedResponse = 1l;
 
-        String response = day01Component.resolveSecondStar("test-input-day01-10.txt");
+        Long response = day01Component.findFirstBasementPosition(")");
         Assertions.assertEquals(expectedResponse, response);
 
     }
 
     @Test
     public void whenInputTestData02_thenResolveSecondStar() throws IOException {
-        String expectedResponse = "5";
+        Long expectedResponse = 5l;
 
-        String response = day01Component.resolveSecondStar("test-input-day01-11.txt");
+        Long response = day01Component.findFirstBasementPosition("()()))");
         Assertions.assertEquals(expectedResponse, response);
 
     }

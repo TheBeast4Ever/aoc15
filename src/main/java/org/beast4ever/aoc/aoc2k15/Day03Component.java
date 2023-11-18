@@ -1,15 +1,13 @@
-package org.beast4ever.aoc.aoc2k15.day03;
+package org.beast4ever.aoc.aoc2k15;
 
 import lombok.extern.slf4j.Slf4j;
 import org.beast4ever.aoc.aoc2k15.DayResolutionComponent;
 import org.beast4ever.aoc.aoc2k15.FileUtilityParser;
-import org.beast4ever.aoc.aoc2k15.day02.Day02Component;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.*;
-import java.util.concurrent.atomic.AtomicReference;
 
 @Component
 @Slf4j

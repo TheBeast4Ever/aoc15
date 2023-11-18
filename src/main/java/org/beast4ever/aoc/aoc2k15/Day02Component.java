@@ -1,4 +1,4 @@
-package org.beast4ever.aoc.aoc2k15.day02;
+package org.beast4ever.aoc.aoc2k15;
 
 import org.beast4ever.aoc.aoc2k15.DayResolutionComponent;
 import org.beast4ever.aoc.aoc2k15.FileUtilityParser;
